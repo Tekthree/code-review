@@ -26,7 +26,7 @@ const e = new Node("e");
 const f = new Node("f");
 const g = new Node("g");
 const h = new Node("h");
-const z = new Node("z");
+// const i = new Node("i");
 
 // a.left = b;
 // a.right = c;
@@ -44,7 +44,7 @@ b.right = e;
 c.right = f;
 e.right = g;
 f.right = h;
-h.right = z;
+// g.right = i;
 
 //          1a
 //         /\
@@ -53,14 +53,13 @@ h.right = z;
 //      4d 5e   6f
 //          \     \
 //           8g    7h
-//                  \
-//                  9z
+//            
 
 
 
 let deepestLevelSofar = -1;
 let result = null;
-let level = 0;
+
 
 function findDeepest(root, level) {
 
@@ -79,4 +78,4 @@ function findDeepest(root, level) {
 }
 
 // console.log(JSON.stringify(a));
-console.log(findDeepest(a, level));
+console.log(findDeepest(a, 0));
