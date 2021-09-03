@@ -1,4 +1,4 @@
-# code-review
+# Code Review
 
 ## Using Trees
 
